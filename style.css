@@ -21,8 +21,8 @@ main {
   box-sizing: border-box;
 }
 .card__container {
-  width: 700px;
-  height: 460px;
+  width: 800px;
+  height: 600px;
   max-height: 100%;
   max-width: 100%;
   display: grid;
@@ -33,11 +33,12 @@ h1 {
   font-family: var(--heading-font);
   color: var(--light-gray);
   opacity: 0.95;
+  font-size: 3rem;
 }
 p {
   font-family: var(--para-font);
   color: var(--para-color);
-  font-size: 0.9rem;
+  font-size: 1.125rem;
 }
 .card__orange {
   background-color: var(--bright-orange);
@@ -52,8 +53,8 @@ p {
   background-color: var(--light-gray);
   border: 2px solid white;
   border-radius: 20px;
-  width: 10em;
-  height: 3.1em;
+  width: 11em;
+  height: 3.5em;
   font-family: var(--para-font);
 }
 .card__cyan {
@@ -69,8 +70,8 @@ p {
   border: 0;
   border-radius: 20px;
   border: 2px solid white;
-  width: 10em;
-  height: 3.1em;
+  width: 11em;
+  height: 3.5em;
   font-family: var(--para-font);
 }
 .card__darkcyan {
@@ -86,8 +87,8 @@ p {
   background-color: var(--light-gray);
   border: 2px solid white;
   border-radius: 20px;
-  width: 10em;
-  height: 3.1em;
+  width: 11em;
+  height: 3.5em;
   font-family: var(--para-font);
 }
 .card__orangebutton:hover{
