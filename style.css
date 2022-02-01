@@ -38,7 +38,7 @@ h1 {
 p {
   font-family: var(--para-font);
   color: var(--para-color);
-  font-size: 1.125rem;
+  font-size: 1.015rem;
 }
 .card__orange {
   background-color: var(--bright-orange);
