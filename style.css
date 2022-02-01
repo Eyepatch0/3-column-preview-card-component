@@ -38,7 +38,8 @@ h1 {
 p {
   font-family: var(--para-font);
   color: var(--para-color);
-  font-size: 1.015rem;
+  font-size: 1rem;
+  line-height: 1.6em;
 }
 .card__orange {
   background-color: var(--bright-orange);
