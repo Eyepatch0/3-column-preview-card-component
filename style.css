@@ -1,0 +1,136 @@
+:root {
+  --heading-font: "Big Shoulders Display";
+  --para-font: "Lexend Deca", sans-serif;
+  --bright-orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --para-color: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+  background-color: var(--light-gray);
+}
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  box-sizing: border-box;
+}
+.card__container {
+  width: 700px;
+  height: 460px;
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 15px;
+}
+h1 {
+  font-family: var(--heading-font);
+  color: var(--light-gray);
+  opacity: 0.95;
+}
+p {
+  font-family: var(--para-font);
+  color: var(--para-color);
+  font-size: 0.9rem;
+}
+.card__orange {
+  background-color: var(--bright-orange);
+  border-radius: 15px 0 0 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__orangebutton {
+  color: var(--bright-orange);
+  background-color: var(--light-gray);
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 10em;
+  height: 3.1em;
+  font-family: var(--para-font);
+}
+.card__cyan {
+  background-color: var(--cyan);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__cyanbutton {
+  color: var(--cyan);
+  background-color: var(--light-gray);
+  border: 0;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 10em;
+  height: 3.1em;
+  font-family: var(--para-font);
+}
+.card__darkcyan {
+  background-color: var(--dark-cyan);
+  border-radius: 0 15px 15px 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__dcbutton {
+  color: var(--dark-cyan);
+  background-color: var(--light-gray);
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 10em;
+  height: 3.1em;
+  font-family: var(--para-font);
+}
+.card__orangebutton:hover{
+    color: white;
+    background-color:var(--bright-orange);
+    cursor: pointer;
+}
+.card__cyanbutton:hover{
+    color: white;
+    background-color:var(--cyan);
+    cursor: pointer;
+}
+.card__dcbutton:hover{
+    color: white;
+    background-color:var(--dark-cyan);
+    cursor: pointer;
+}
+@media (max-width:375px ){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .card__container {
+
+        max-height: 100%;
+        max-width: 100%;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 5vh;
+        padding: 0;
+      }
+    .card__orange{
+        border-radius: 1em 1em 0 0 ;
+      }
+    .card__darkcyan{
+        border-radius: 0 0 1em 1em;
+      }
+    footer {
+        position: absolute;
+        bottom: 96%;
+        left: 4%;
+    }
+
+}
